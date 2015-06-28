@@ -1,0 +1,245 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 27, 2015, 4:35:04 PM
+    Author     : Toshiba
+*/
+body
+{
+    margin: 0;
+    background-image: url("image/bgbrown.jpg");
+}
+a
+{
+    text-decoration: none;
+}
+.Login
+{
+    margin: 20% auto;
+    width: 25%;
+}
+.Register
+{
+    margin: 10% auto;
+    width: 25%;
+}
+
+.inputLoginRegister
+{
+    margin: 10px;
+    width: 100%;
+}
+.submitLogin
+{
+    float: right;
+}
+.submitRegister
+{
+    margin-left: 10px;
+}
+.status
+{
+    height: 25px;
+    padding: 5px;
+    width: 10%;
+    float: right;
+    background-color:  peachpuff;
+    margin-bottom: 50px;
+}
+.dashboardHeader
+{
+    width: 100%;
+    height: 45px;
+    background-color: yellow;
+}
+.titlePage
+{
+    width: 50%;
+    clear: both;
+    background-color: gray;
+    margin-left: 100px;
+    
+}
+.titlePage > center
+{
+    font-size: 50px;
+}
+.back
+{
+    height: 100%;
+    font-size: 50px;
+    width: 50px;
+    margin-left: 20px;
+    display: inline;
+}
+.calendarIcon
+{
+    background-color: fuchsia;
+    height: 150px;
+    width: 200px;
+    float: right;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.monthNow
+{
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    margin-top: 3px;
+}
+.dateNow
+{
+    width: 95px;
+    height: 95px;
+    background-color: red;
+    margin: auto;
+    text-align: center;
+    font-size: 80px;
+}
+.categoryMenu
+{
+    clear: both;
+    width: 45%;
+    height: 500px;
+    margin: auto;
+    background-color: palevioletred;  
+}
+.containerCategory
+{
+    width: 90%;
+    height: 90%;
+    padding: 40px;
+}
+.category
+{
+    margin: 5px;
+    height: 45%;
+    width: 45%;
+    background-color: blue;
+    display: inline-block;
+}
+.titleCategory
+{
+    width: 100%;
+    height: 100%;   
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+}
+#listing
+{
+    margin: 15px auto;
+    width: 75%;
+    height: auto;
+    padding-bottom: 10px;
+    background-color: #F7E28F;
+    clear: both;
+}
+#listing > header
+{
+    padding: 5px;
+    background-color: #F1DF79;
+    clear: both;
+    width: auto
+}
+#listing > header > h1
+{
+    margin-left: 40px;
+    display: inline-block;
+    width: 25%;
+}
+#listing > header > form
+{
+    text-align: center;
+    display: inline-block;  
+    width: 40%;
+}
+#listing > header > button
+{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 25px;
+    background-color: #7BC06A;
+    border-radius: 25px;
+    font-size: 20px;
+    border-color: #7BC06A;
+}
+.listOfList
+{
+    padding-top: 10px;
+    padding-left: 20px;
+    
+}
+
+.listOfList > input
+{
+    margin-left: 15px;
+}
+.listDescription
+{
+    width: 93%;
+    height: 20px;
+}
+.listGroup
+{
+    height: inherit;
+    margin-bottom: 20px;
+}
+#calendarMonth
+{
+    margin: auto;
+    width: 95%;
+    height: 80px;
+    text-align: center;
+    font-size: 50px;
+    background-color: darkcyan;
+}
+#calendar
+{
+    margin: auto;
+    width: 95%;
+    height: auto;
+    background-color: royalblue;
+}
+#weeks
+{
+    width: 100%;
+    height: 20px;
+}
+#weeks > label
+{
+    text-align: center;
+    display: inline-block;  
+    width: 14%;
+    height: 100%;
+    background-color: yellowgreen;
+}
+#days
+{
+    width: 100%;
+    height: auto;
+}
+#days > label
+{
+    text-align: center;
+    display: inline-block;  
+    width: 14%;
+    height: 155px;
+    margin-top: 5px;
+    background-color: plum;
+    font-size: 100px;
+}
+#now
+{
+    color: palegoldenrod;
+}
