@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>List | Activity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="module/style.css" />
+    </head>
+    <body>
+        <header class="dashboardHeader">
+            <span class="back"><a href="dashboard.html">&#8592;</a></span>
+            <span class="status">Your Name <a href="index.html">Logout</a></span>
+        </header>
+        <article id="listing">
+            <header>
+                <h1>House Work</h1>
+                <form action="#">
+                    <select name="weekList">
+                        <option value="">Monday</option>
+                        <option value="">Tuesday</option>
+                        <option value="">Wednesday</option>
+                        <option value="">Thursday</option>
+                        <option value="">Friday</option>
+                        <option value="">Saturday</option>
+                        <option value="">Sunday</option>
+                    </select>
+                </form>
+                <button type="button" onclick="addList()">+</button>
+            </header>
+            <article id="listOfList">
+                <form action="#">
+                    <span class="listGroup">
+                        <input type="checkbox" class="doneList"/>
+                        <input type="text" class="listDescription"/>
+                        <input type="checkbox" class="listPriority"/>
+                    </span> 
+                </form>
+            </article>
+        </article>
+        <script type="text/javascript">
+            function addList(e)
+            {
+                document.getElementById('listOfList').innerHTML += '<span class="listGroup"> <input type="checkbox" class="doneList"/> <input type="text" class="listDescription"/> <input type="checkbox" class="listPriority"/> </span>';
+            }
+        </script>
+    </body>
+</html>

@@ -10,7 +10,7 @@ and open the template in the editor.
 body
 {
     margin: 0;
-    background-image: url("../image/bgbrown.jpg");
+    background-image: url("../layout/bgbrown.jpg");
 }
 a
 {
@@ -178,14 +178,13 @@ a
     font-size: 20px;
     border-color: #7BC06A;
 }
-.listOfList
+#listOfList
 {
     padding-top: 10px;
     padding-left: 20px;
-    
 }
 
-.listOfList > input
+#listOfList > input
 {
     margin-left: 15px;
 }
@@ -196,8 +195,13 @@ a
 }
 .listGroup
 {
+    width: 100%;
     height: inherit;
     margin-bottom: 20px;
+}
+input[type="checkbox"].listPriority:checked
+{
+    display: none;
 }
 #calendarMonth
 {
