@@ -42,13 +42,32 @@ a
 }
 .status
 {
-    height: 25px;
+    height: auto;
     padding: 5px;
     padding-left: 10px;
     width: auto;
     float: right;
-    background-color:   activeborder;
+    background-color: activeborder;
     margin-bottom: 50px;
+}
+.miniProfileName 
+{
+    float: left;
+    margin-top: 15px;
+}
+.logout
+{
+    margin: 15px;
+    float: right;
+}
+.miniProfilePic
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+    background-color: green;
+    border-radius: 25px;
 }
 .dashboardHeader
 {
@@ -201,7 +220,8 @@ a
 }
 input[type="checkbox"].listPriority:checked
 {
-    display: none;
+    background-color: yellow;
+    border-color: yellow;
 }
 #calendarMonth
 {
@@ -211,13 +231,14 @@ input[type="checkbox"].listPriority:checked
     text-align: center;
     font-size: 50px;
     background-color: antiquewhite;
+    clear: both;
 }
 #calendar
 {
     margin: auto;
     width: 95%;
     height: auto;
-    background-color: #fff;
+    background-color: transparent;
 }
 #weeks
 {
@@ -241,11 +262,13 @@ input[type="checkbox"].listPriority:checked
 {
     text-align: center;
     display: inline-block;  
-    width: 14%;
+    width: 13.5%;
     height: 155px;
     margin-top: 5px;
     background-color: #F7E28F;
     font-size: 100px;
+    border-style: solid; 
+    border-color: black;
 }
 #now
 {
