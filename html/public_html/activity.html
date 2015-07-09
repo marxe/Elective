@@ -21,13 +21,13 @@ and open the template in the editor.
                 <h1>House Work</h1>
                 <form action="#">
                     <select name="weekList">
-                        <option value="">Monday</option>
-                        <option value="">Tuesday</option>
-                        <option value="">Wednesday</option>
-                        <option value="">Thursday</option>
-                        <option value="">Friday</option>
-                        <option value="">Saturday</option>
-                        <option value="">Sunday</option>
+                        <option value="1">Monday</option>
+                        <option value="2">Tuesday</option>
+                        <option value="3">Wednesday</option>
+                        <option value="4">Thursday</option>
+                        <option value="5">Friday</option>
+                        <option value="6">Saturday</option>
+                        <option value="7">Sunday</option>
                     </select>
                 </form>
                 <button type="button" onclick="addList()">+</button>
@@ -38,7 +38,7 @@ and open the template in the editor.
                         <input type="checkbox" class="doneList" name="doneActivity[]"/>
                         <input type="text" class="listDescription" name="listToDo[]"/>
                         <input type="checkbox" class="listPriority" name="setPriority[]"/>
-                        <button type="submit" class="delete" hidden>-</button>
+                        <button type="submit" class="delete" name ="number[]" hidden>-</button>
                     </span> 
                 </form>
             </article>
@@ -46,11 +46,11 @@ and open the template in the editor.
         <script type="text/javascript">
             function addList(e)
             {
-                document.getElementById('listOfList').innerHTML += '<span class="listGroup"> <input type="checkbox" class="doneList" name="doneActivity[]"/> <input type="text" class="listDescription" name="listToDo[]"/> <input type="checkbox" class="listPriority" name="setPriority[]"/> <button type="submit" onclick="deleteList()" class="delete">-</button></span>';
+                document.getElementById('listOfList').innerHTML += '<span class="listGroup"> <input type="checkbox" class="doneList" name="doneActivity[]"/> <input type="text" class="listDescription" name="listToDo[]"/> <input type="checkbox" class="listPriority" name="setPriority[]"/> <button type="submit" class="delete" name ="number[]" hidden>-</button></span>';
             }
             function deleteList(e)
             {
-                list = document.getElementsByClassName('listGroup')[0];
+                list = document.getElementByName(e);
             }
         </script>
     </body>
